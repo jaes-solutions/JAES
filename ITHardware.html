@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      IT Hardware Solutions | Equipment, Support & Upgrades | JAES Solutions
+    </title>
+    <link rel="icon" href="favicon.ico" />
+    <!-- Standard Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+
+    <!-- Android / Chrome -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/android-chrome-512x512.png"
+    />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="stylesheet" href="hardware.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="JAES Solutions offers reliable IT hardware services including equipment sales, consulting, maintenance, and upgrades to power your business infrastructure."
+    />
+    <meta
+      name="keywords"
+      content="IT Hardware, JAES Solutions Hardware, IT Equipment Sales, IT Maintenance, Hardware Consulting, Server Sales, Computer Upgrades, Tech Hardware Services, Business Hardware Solutions, Network Hardware"
+    />
+    <meta name="author" content="JAES Solutions" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="IT Hardware | JAES Solutions" />
+    <meta
+      property="og:description"
+      content="Explore JAES Solutions' expert IT hardware offerings — from procurement consulting to system upgrades and reliable support."
+    />
+    <meta
+      property="og:image"
+      content="https://jaessolutions.com/assets/jaes.png"
+    />
+    <meta
+      property="og:url"
+      content="https://jaessolutions.com/ITHardware.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IT Hardware | JAES Solutions" />
+    <meta
+      name="twitter:description"
+      content="Dependable IT hardware services for seamless operations. Contact JAES Solutions for procurement, support, and upgrades."
+    />
+    <meta
+      name="twitter:image"
+      content="https://jaessolutions.com/assets/jaes.png"
+    />
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      .delay-150 {
+        animation-delay: 0.15s;
+      }
+    </style>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LYDJ4DEB0S"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-LYDJ4DEB0S");
+  </script>
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <script>
+      // Load navbar.html into the #navbar-placeholder div
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+
+            // Now safe to access elements from navbar.html
+            document
+              .querySelector(".nav-ser")
+              ?.addEventListener("mouseover", () => {
+                document
+                  .querySelector(".dropdown-menu")
+                  ?.classList.remove("hidden");
+              });
+
+            document
+              .querySelector(".nav-item")
+              ?.addEventListener("mouseleave", () => {
+                document
+                  .querySelector(".dropdown-menu")
+                  ?.classList.add("hidden");
+              });
+
+            const navbar = document.getElementById("navbar");
+            window.addEventListener("scroll", () => {
+              if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+              } else {
+                navbar.classList.remove("scrolled");
+              }
+            });
+          })
+          .catch((error) => {
+            console.error("Error loading navbar:", error);
+          });
+      });
+      //footer
+
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          })
+          .catch((error) => console.error("Footer load error:", error));
+      });
+
+      // Get the navbar element
+      const navbar = document.getElementById("navbar");
+
+      // Listen for the scroll event
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          // Change 50 to the scroll position where you want the color change
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        class="absolute inset-0 w-full h-full object-cover opacity-30"
+      >
+        <source src="assets/baa.mp4" type="video/mp4" />
+      </video>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/90"
+      ></div>
+      <div class="relative z-10 px-6">
+        <h1
+          class="text-5xl sm:text-7xl font-extrabold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#42cdf6] to-white animate-fadeIn"
+        >
+          IT Hardware Solutions
+        </h1>
+        <p
+          class="text-lg sm:text-2xl text-gray-200 max-w-2xl mx-auto animate-fadeIn delay-150"
+        >
+          Reliable. Scalable. Future-Ready. From laptops to enterprise servers,
+          JAES Solutions powers your digital backbone.
+        </p>
+        <a
+          href="#services"
+          class="mt-8 inline-block bg-[#42cdf6] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#1da9cf] transition-transform transform hover:scale-105"
+          >Explore Services</a
+        >
+      </div>
+    </section>
+
+    <!-- Overview Section with Parallax and Expanded Content -->
+    <section class="relative text-gray-100 py-32 px-6 sm:px-10 animate-fadeIn overflow-hidden">
+      <!-- Parallax Background -->
+      <div 
+        class="absolute inset-0 bg-fixed bg-center bg-cover opacity-30" 
+        style="background-image: url('assets/hardware-bg.jpg');">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/90"></div>
+
+      <div class="relative z-10 max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-[#42cdf6] mb-8">Your Complete Hardware Partner</h2>
+        <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-10">
+          At JAES Solutions, we don’t just provide hardware — we engineer dependability. Whether you’re equipping an office with new laptops, upgrading your data centre, or building a secure network from the ground up, we deliver performance‑led solutions that evolve with your business.
+        </p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 mt-12 text-left">
+          <div class="bg-gray-800/60 rounded-2xl p-6 border border-[#42cdf6]/20 hover:bg-gray-800/80 transition">
+            <h3 class="text-2xl font-semibold text-[#42cdf6] mb-3">End-to-End Consultation</h3>
+            <p class="text-gray-300 leading-relaxed">We help you select the right hardware ecosystem, from desktops to servers, tailored to your performance objectives and budget.</p>
+          </div>
+
+          <div class="bg-gray-800/60 rounded-2xl p-6 border border-[#42cdf6]/20 hover:bg-gray-800/80 transition">
+            <h3 class="text-2xl font-semibold text-[#42cdf6] mb-3">Procurement & Deployment</h3>
+            <p class="text-gray-300 leading-relaxed">We source high-quality hardware from trusted global suppliers and manage the entire deployment process — ensuring your systems are ready for use from day one.</p>
+          </div>
+
+          <div class="bg-gray-800/60 rounded-2xl p-6 border border-[#42cdf6]/20 hover:bg-gray-800/80 transition">
+            <h3 class="text-2xl font-semibold text-[#42cdf6] mb-3">Technical Support</h3>
+            <p class="text-gray-300 leading-relaxed">We provide reliable technical support to resolve issues efficiently and ensure your hardware continues performing at its best.</p>
+          </div>
+        </div>
+
+        <div class="mt-16">
+          <a 
+            href="contact.html" 
+            class="inline-block bg-[#42cdf6] text-black font-semibold px-10 py-4 rounded-lg hover:bg-[#1da9cf] transition-transform transform hover:scale-105 shadow-lg">
+            Get Expert Hardware Guidance
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hardware Categories -->
+    <section
+      id="services"
+      class="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-24 px-6 sm:px-10"
+    >
+      <div class="max-w-7xl mx-auto text-center mb-16">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#42cdf6] mb-4">
+          Our Hardware Solutions
+        </h2>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+          Explore our comprehensive range of hardware solutions designed for performance, scalability, and dependability across every sector.
+        </p>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+      >
+        <!-- Laptops & Desktops -->
+        <div
+          class="group relative p-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-[#42cdf6]/30 overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-[#42cdf6]/10 to-transparent"
+          ></div>
+          <div class="relative z-10">
+            <div
+              class="mx-auto mb-6 w-24 h-24 flex items-center justify-center rounded-full bg-[#42cdf6]/10 border border-[#42cdf6]/30 group-hover:scale-110 transition-transform duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#42cdf6" class="w-12 h-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M4 8h16v10H4V8zm0 10h16v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#42cdf6] mb-3">
+              Laptops & Desktops
+            </h3>
+            <p class="text-gray-300 text-base leading-relaxed">
+              Reliable laptops and desktops optimised for business, productivity, and creative workflows.
+            </p>
+          </div>
+        </div>
+
+        <!-- Servers & Storage -->
+        <div
+          class="group relative p-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-[#42cdf6]/30 overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-[#42cdf6]/10 to-transparent"
+          ></div>
+          <div class="relative z-10">
+            <div
+              class="mx-auto mb-6 w-24 h-24 flex items-center justify-center rounded-full bg-[#42cdf6]/10 border border-[#42cdf6]/30 group-hover:scale-110 transition-transform duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#42cdf6" class="w-12 h-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 5h14a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2zm0 9h14a2 2 0 0 1 2 2v3H3v-3a2 2 0 0 1 2-2zM7 7h.01M7 16h.01" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#42cdf6] mb-3">
+              Servers & Storage
+            </h3>
+            <p class="text-gray-300 text-base leading-relaxed">
+              Powerful server systems and scalable storage built for uptime, performance, and security.
+            </p>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div
+          class="group relative p-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-[#42cdf6]/30 overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-[#42cdf6]/10 to-transparent"
+          ></div>
+          <div class="relative z-10">
+            <div
+              class="mx-auto mb-6 w-24 h-24 flex items-center justify-center rounded-full bg-[#42cdf6]/10 border border-[#42cdf6]/30 group-hover:scale-110 transition-transform duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#42cdf6" class="w-12 h-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v8m0 0-3-3m3 3 3-3m0 6H6a2 2 0 0 1-2-2v-2m16 4h-2a2 2 0 0 1-2-2v-2m4 4V6a2 2 0 0 0-2-2h-2M4 6a2 2 0 0 1 2-2h2" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#42cdf6] mb-3">
+              Networking Equipment
+            </h3>
+            <p class="text-gray-300 text-base leading-relaxed">
+              Routers, switches, and advanced network hardware ensuring connectivity and performance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Printers -->
+        <div
+          class="group relative p-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-[#42cdf6]/30 overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-[#42cdf6]/10 to-transparent"
+          ></div>
+          <div class="relative z-10">
+            <div
+              class="mx-auto mb-6 w-24 h-24 flex items-center justify-center rounded-full bg-[#42cdf6]/10 border border-[#42cdf6]/30 group-hover:scale-110 transition-transform duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#42cdf6" class="w-12 h-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 9V4h12v5m-3 10H9a2 2 0 0 1-2-2v-2H5a1 1 0 0 1-1-1v-3h16v3a1 1 0 0 1-1 1h-2v2a2 2 0 0 1-2 2z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#42cdf6] mb-3">
+              Printers & Peripherals
+            </h3>
+            <p class="text-gray-300 text-base leading-relaxed">
+              Office essentials — printers, scanners, and accessories designed for reliability and ease of use.
+            </p>
+          </div>
+        </div>
+
+        <!-- CCTV -->
+        <div
+          class="group relative p-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-[#42cdf6]/30 overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-[#42cdf6]/10 to-transparent"
+          ></div>
+          <div class="relative z-10">
+            <div
+              class="mx-auto mb-6 w-24 h-24 flex items-center justify-center rounded-full bg-[#42cdf6]/10 border border-[#42cdf6]/30 group-hover:scale-110 transition-transform duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#42cdf6" class="w-12 h-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.5 8.5L11 3l8.5 5.5M4 10v10h16V10M12 12v8" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#42cdf6] mb-3">
+              CCTV & Security Systems
+            </h3>
+            <p class="text-gray-300 text-base leading-relaxed">
+              AI‑powered surveillance and access control systems that protect your workspace with precision.
+            </p>
+          </div>
+        </div>
+
+        <!-- Maintenance -->
+        <div
+          class="group relative p-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-[#42cdf6]/30 overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-[#42cdf6]/10 to-transparent"
+          ></div>
+          <div class="relative z-10">
+            <div
+              class="mx-auto mb-6 w-24 h-24 flex items-center justify-center rounded-full bg-[#42cdf6]/10 border border-[#42cdf6]/30 group-hover:scale-110 transition-transform duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#42cdf6" class="w-12 h-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687 1.687a1.5 1.5 0 0 1 0 2.121l-2.829 2.829a1.5 1.5 0 0 1-2.121 0L12 9.293l-5.293 5.293a1 1 0 0 0 0 1.414l3.293 3.293a1 1 0 0 0 1.414 0L16.95 12m1.414-8.485a2.5 2.5 0 0 1 0 3.536" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#42cdf6] mb-3">
+              Asset Management & Lifecycle Support
+            </h3>
+            <p class="text-gray-300 text-base leading-relaxed">
+              From procurement tracking to asset retirement, we provide complete lifecycle management to ensure your IT infrastructure remains cost-effective, compliant, and ready for tomorrow’s challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner Brands Section 
+    <section class="bg-gray-900 py-20 text-center text-gray-200">
+      <h2 class="text-3xl sm:text-4xl font-bold text-[#42cdf6] mb-10">
+        Trusted by Leading Technology Partners
+      </h2>
+      <div class="flex flex-wrap justify-center items-center gap-8 opacity-80">
+        <img
+          src="assets/dell.png"
+          alt="Dell"
+          class="h-12 grayscale hover:grayscale-0 transition-all duration-300"
+        />
+        <img
+          src="assets/hp.png"
+          alt="HP"
+          class="h-12 grayscale hover:grayscale-0 transition-all duration-300"
+        />
+        <img
+          src="assets/lenovo.png"
+          alt="Lenovo"
+          class="h-12 grayscale hover:grayscale-0 transition-all duration-300"
+        />
+        <img
+          src="assets/cisco.png"
+          alt="Cisco"
+          class="h-12 grayscale hover:grayscale-0 transition-all duration-300"
+        />
+        <img
+          src="assets/microsoft.png"
+          alt="Microsoft"
+          class="h-12 grayscale hover:grayscale-0 transition-all duration-300"
+        />
+      </div>
+    </section>-->
+
+    <section
+      class="bg-gradient-to-b from-black via-[#0f172a] to-black py-24 px-6 text-center text-white"
+      aria-label="Call to Action"
+      data-aos="fade-up"
+    >
+      <h2
+        class="text-4xl md:text-5xl font-extrabold max-w-3xl mx-auto mb-6 leading-tight"
+      >
+        Ready to Transform Your Business with
+        <span class="text-blue-500">JAES Solutions?</span>
+      </h2>
+      <p class="text-gray-300 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
+        Contact us today to discuss how our IT expertise can help you innovate,
+        grow, and succeed.
+      </p>
+      <a
+        href="contact.html"
+        class="cta-glow-btn inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full py-3 px-10 shadow-lg hover:shadow-blue-500/40 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500"
+        >Get In Touch</a
+      >
+      <style>
+        .cta-glow-btn {
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+        }
+        .cta-glow-btn::before {
+          content: "";
+          position: absolute;
+          inset: -4px;
+          border-radius: 9999px;
+          background: linear-gradient(
+            90deg,
+            #2563eb 0%,
+            #60a5fa 50%,
+            #2563eb 100%
+          );
+          opacity: 0.5;
+          filter: blur(12px);
+          transition: opacity 0.3s, filter 0.3s;
+          z-index: -1;
+          pointer-events: none;
+        }
+        .cta-glow-btn:hover::before,
+        .cta-glow-btn:focus::before {
+          opacity: 1;
+          filter: blur(20px);
+          animation: cta-glow-animate 1.2s linear infinite;
+        }
+        @keyframes cta-glow-animate {
+          0% {
+            filter: blur(20px);
+            opacity: 1;
+          }
+          50% {
+            filter: blur(28px);
+            opacity: 0.8;
+          }
+          100% {
+            filter: blur(20px);
+            opacity: 1;
+          }
+        }
+      </style>
+    </section>
+
+    <div id="footer-placeholder"></div>
+  </body>
+</html>

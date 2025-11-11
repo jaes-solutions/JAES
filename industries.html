@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Industries We Serve | Sector-Specific IT Solutions | JAES Solutions
+    </title>
+    <link rel="icon" href="favicon.ico" />
+    <!-- Standard Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+
+    <!-- Android / Chrome -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/android-chrome-512x512.png"
+    />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <link rel="stylesheet" href="industries.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <meta
+      name="description"
+      content="Explore how JAES Solutions serves industries including healthcare, finance, telecom, retail, and more through innovative IT and hardware solutions."
+    />
+    <meta
+      name="keywords"
+      content="Industries Served by JAES, JAES Industry Solutions, Healthcare IT, Telecom IT, Retail IT Services, Manufacturing Technology, IT for Energy Sector, Government IT Services, Financial Technology, JAES Industry Expertise"
+    />
+    <meta name="author" content="JAES Solutions" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Industries We Serve | JAES Solutions" />
+    <meta
+      property="og:description"
+      content="JAES Solutions provides specialised IT and development services across multiple industries including healthcare, finance, retail, and telecom."
+    />
+    <meta
+      property="og:image"
+      content="https://jaessolutions.com/assets/jaes.png"
+    />
+    <meta
+      property="og:url"
+      content="https://jaessolutions.com/industries.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Industries We Serve | JAES Solutions" />
+    <meta
+      name="twitter:description"
+      content="Learn how JAES Solutions empowers diverse industries with expert IT, software, and hardware services."
+    />
+    <meta
+      name="twitter:image"
+      content="https://jaessolutions.com/assets/jaes.png"
+    />
+</head>
+  <style>
+    @media (max-width: 640px) {
+      .industry-video video {
+        max-height: 300px;
+        object-fit: cover;
+      }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LYDJ4DEB0S"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-LYDJ4DEB0S");
+  </script>
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <script>
+      // Load navbar.html into the #navbar-placeholder div
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+
+            // Now safe to access elements from navbar.html
+            document
+              .querySelector(".nav-ser")
+              ?.addEventListener("mouseover", () => {
+                document
+                  .querySelector(".dropdown-menu")
+                  ?.classList.remove("hidden");
+              });
+
+            document
+              .querySelector(".nav-item")
+              ?.addEventListener("mouseleave", () => {
+                document
+                  .querySelector(".dropdown-menu")
+                  ?.classList.add("hidden");
+              });
+
+            const navbar = document.getElementById("navbar");
+            window.addEventListener("scroll", () => {
+              if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+              } else {
+                navbar.classList.remove("scrolled");
+              }
+            });
+          })
+          .catch((error) => {
+            console.error("Error loading navbar:", error);
+          });
+      });
+      //footer
+
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          })
+          .catch((error) => console.error("Footer load error:", error));
+      });
+
+      // Get the navbar element
+      const navbar = document.getElementById("navbar");
+
+      // Listen for the scroll event
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          // Change 50 to the scroll position where you want the color change
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+
+    <div
+      id="healthcare"
+      class="industry-section text-white flex flex-col lg:flex-row items-center justify-center min-h-screen px-5 py-12 lg:py-0 even:lg:flex-row-reverse text-center lg:text-left"
+    >
+      <div class="industry-content w-full lg:w-1/2 mb-8 lg:mb-0 px-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Healthcare</h2>
+        <p class="mb-6 text-sm sm:text-base leading-relaxed">
+          We provide healthcare organisations with secure software solutions,
+          telemedicine platforms, patient data systems, and medical hardware to
+          enhance care delivery and operational efficiency.
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a
+            href="contact.html"
+            class="cta-btn group inline-flex items-center gap-3.5 px-6 py-3 border border-white rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:bg-white hover:text-black relative overflow-hidden"
+          >
+            Talk to an Expert
+            <span
+              class="arrow-circle bg-white rounded-full p-2 flex items-center justify-center transition-colors group-hover:bg-teal-400"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="arrow-img w-4 h-4 object-contain transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="industry-video relative w-full lg:w-1/2 mt-6 lg:mt-0 rounded-2xl shadow-xl overflow-hidden px-4"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="relative z-0 w-full h-auto rounded-xl"
+        >
+          <source src="assets/healthcare.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-teal-200/30 to-cyan-400/30 mix-blend-overlay pointer-events-none z-10"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      id="insurance"
+      class="industry-section text-white flex flex-col lg:flex-row items-center justify-center min-h-screen px-5 py-12 lg:py-0 even:lg:flex-row-reverse text-center lg:text-left"
+    >
+      <div class="industry-content w-full lg:w-1/2 mb-8 lg:mb-0 px-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Insurance</h2>
+        <p class="mb-6 text-sm sm:text-base leading-relaxed">
+          JAES Solutions offers digital transformation for insurers through
+          custom claim processing systems, customer portals, and secure data
+          management platforms.
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a
+            href="contact.html"
+            class="cta-btn group inline-flex items-center gap-3.5 px-6 py-3 border border-white rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:bg-white hover:text-black relative overflow-hidden"
+          >
+            Talk to an Expert
+            <span
+              class="arrow-circle bg-white rounded-full p-2 flex items-center justify-center transition-colors group-hover:bg-teal-400"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="arrow-img w-4 h-4 object-contain transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="industry-video relative w-full lg:w-1/2 mt-6 lg:mt-0 rounded-2xl shadow-xl overflow-hidden px-4"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="relative z-0 w-full h-auto rounded-xl"
+        >
+          <source src="assets/91.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-teal-200/30 to-cyan-400/30 mix-blend-overlay pointer-events-none z-10"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      id="government"
+      class="industry-section text-white flex flex-col lg:flex-row items-center justify-center min-h-screen px-5 py-12 lg:py-0 even:lg:flex-row-reverse text-center lg:text-left"
+    >
+      <div class="industry-content w-full lg:w-1/2 mb-8 lg:mb-0 px-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Government</h2>
+        <p class="mb-6 text-sm sm:text-base leading-relaxed">
+          We support government bodies with robust IT infrastructure, digital
+          governance platforms, citizen service portals, and cybersecurity
+          solutions.
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a
+            href="contact.html"
+            class="cta-btn group inline-flex items-center gap-3.5 px-6 py-3 border border-white rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:bg-white hover:text-black relative overflow-hidden"
+          >
+            Talk to an Expert
+            <span
+              class="arrow-circle bg-white rounded-full p-2 flex items-center justify-center transition-colors group-hover:bg-teal-400"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="arrow-img w-4 h-4 object-contain transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="industry-video relative w-full lg:w-1/2 mt-6 lg:mt-0 rounded-2xl shadow-xl overflow-hidden px-4"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="relative z-0 w-full h-auto rounded-xl"
+        >
+          <source src="assets/92.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-teal-200/30 to-cyan-400/30 mix-blend-overlay pointer-events-none z-10"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      id="manufacturing"
+      class="industry-section text-white flex flex-col lg:flex-row items-center justify-center min-h-screen px-5 py-12 lg:py-0 even:lg:flex-row-reverse text-center lg:text-left"
+    >
+      <div class="industry-content w-full lg:w-1/2 mb-8 lg:mb-0 px-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Manufacturing</h2>
+        <p class="mb-6 text-sm sm:text-base leading-relaxed">
+          Our solutions for manufacturers include smart automation systems,
+          inventory management software, and IoT integration for real-time
+          operations tracking.
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a
+            href="contact.html"
+            class="cta-btn group inline-flex items-center gap-3.5 px-6 py-3 border border-white rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:bg-white hover:text-black relative overflow-hidden"
+          >
+            Talk to an Expert
+            <span
+              class="arrow-circle bg-white rounded-full p-2 flex items-center justify-center transition-colors group-hover:bg-teal-400"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="arrow-img w-4 h-4 object-contain transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="industry-video relative w-full lg:w-1/2 mt-6 lg:mt-0 rounded-2xl shadow-xl overflow-hidden px-4"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="relative z-0 w-full h-auto rounded-xl"
+        >
+          <source src="assets/93.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-teal-200/30 to-cyan-400/30 mix-blend-overlay pointer-events-none z-10"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      id="utilities-energy"
+      class="industry-section text-white flex flex-col lg:flex-row items-center justify-center min-h-screen px-5 py-12 lg:py-0 even:lg:flex-row-reverse text-center lg:text-left"
+    >
+      <div class="industry-content w-full lg:w-1/2 mb-8 lg:mb-0 px-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">
+          Utilities & Energy
+        </h2>
+        <p class="mb-6 text-sm sm:text-base leading-relaxed">
+          JAES Solutions delivers smart grid systems, asset monitoring
+          platforms, and custom software for utility and energy providers to
+          optimise resource use and service delivery.
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a
+            href="contact.html"
+            class="cta-btn group inline-flex items-center gap-3.5 px-6 py-3 border border-white rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:bg-white hover:text-black relative overflow-hidden"
+          >
+            Talk to an Expert
+            <span
+              class="arrow-circle bg-white rounded-full p-2 flex items-center justify-center transition-colors group-hover:bg-teal-400"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="arrow-img w-4 h-4 object-contain transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="industry-video relative w-full lg:w-1/2 mt-6 lg:mt-0 rounded-2xl shadow-xl overflow-hidden px-4"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="relative z-0 w-full h-auto rounded-xl"
+        >
+          <source src="assets/94.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-teal-200/30 to-cyan-400/30 mix-blend-overlay pointer-events-none z-10"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      id="banking-financial"
+      class="industry-section text-white flex flex-col lg:flex-row items-center justify-center min-h-screen px-5 py-12 lg:py-0 even:lg:flex-row-reverse text-center lg:text-left"
+    >
+      <div class="industry-content w-full lg:w-1/2 mb-8 lg:mb-0 px-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">
+          Banking & Financial Services
+        </h2>
+        <p class="mb-6 text-sm sm:text-base leading-relaxed">
+          We provide fintech solutions including mobile banking apps, fraud
+          detection systems, and custom financial software for secure and
+          scalable operations.
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a
+            href="contact.html"
+            class="cta-btn group inline-flex items-center gap-3.5 px-6 py-3 border border-white rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:bg-white hover:text-black relative overflow-hidden"
+          >
+            Talk to an Expert
+            <span
+              class="arrow-circle bg-white rounded-full p-2 flex items-center justify-center transition-colors group-hover:bg-teal-400"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="arrow-img w-4 h-4 object-contain transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="industry-video relative w-full lg:w-1/2 mt-6 lg:mt-0 rounded-2xl shadow-xl overflow-hidden px-4"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="relative z-0 w-full h-auto rounded-xl"
+        >
+          <source src="assets/95.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-teal-200/30 to-cyan-400/30 mix-blend-overlay pointer-events-none z-10"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      id="consumer-retail"
+      class="industry-section text-white flex flex-col lg:flex-row items-center justify-center min-h-screen px-5 py-12 lg:py-0 even:lg:flex-row-reverse text-center lg:text-left"
+    >
+      <div class="industry-content w-full lg:w-1/2 mb-8 lg:mb-0 px-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">
+          Consumer & Retail
+        </h2>
+        <p class="mb-6 text-sm sm:text-base leading-relaxed">
+          Our team builds e-commerce platforms, POS integrations, and
+          personalised marketing tools to elevate customer engagement and
+          streamline retail operations.
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a
+            href="contact.html"
+            class="cta-btn group inline-flex items-center gap-3.5 px-6 py-3 border border-white rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:bg-white hover:text-black relative overflow-hidden"
+          >
+            Talk to an Expert
+            <span
+              class="arrow-circle bg-white rounded-full p-2 flex items-center justify-center transition-colors group-hover:bg-teal-400"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="arrow-img w-4 h-4 object-contain transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="industry-video relative w-full lg:w-1/2 mt-6 lg:mt-0 rounded-2xl shadow-xl overflow-hidden px-4"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="relative z-0 w-full h-auto rounded-xl"
+        >
+          <source src="assets/96.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-teal-200/30 to-cyan-400/30 mix-blend-overlay pointer-events-none z-10"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      id="transport-travel"
+      class="industry-section text-white flex flex-col lg:flex-row items-center justify-center min-h-screen px-5 py-12 lg:py-0 even:lg:flex-row-reverse text-center lg:text-left"
+    >
+      <div class="industry-content w-full lg:w-1/2 mb-8 lg:mb-0 px-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">
+          Transport & Travel
+        </h2>
+        <p class="mb-6 text-sm sm:text-base leading-relaxed">
+          We offer booking systems, fleet management tools, and customer-facing
+          mobile applications to enhance travel planning and logistics
+          efficiency.
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a
+            href="contact.html"
+            class="cta-btn group inline-flex items-center gap-3.5 px-6 py-3 border border-white rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:bg-white hover:text-black relative overflow-hidden"
+          >
+            Talk to an Expert
+            <span
+              class="arrow-circle bg-white rounded-full p-2 flex items-center justify-center transition-colors group-hover:bg-teal-400"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="arrow-img w-4 h-4 object-contain transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="industry-video relative w-full lg:w-1/2 mt-6 lg:mt-0 rounded-2xl shadow-xl overflow-hidden px-4"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="relative z-0 w-full h-auto rounded-xl"
+        >
+          <source src="assets/97.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-teal-200/30 to-cyan-400/30 mix-blend-overlay pointer-events-none z-10"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      id="it-media-telecom"
+      class="industry-section text-white flex flex-col lg:flex-row items-center justify-center min-h-screen px-5 py-12 lg:py-0 even:lg:flex-row-reverse text-center lg:text-left"
+    >
+      <div class="industry-content w-full lg:w-1/2 mb-8 lg:mb-0 px-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">
+          IT, Media & Telecom Services
+        </h2>
+        <p class="mb-6 text-sm sm:text-base leading-relaxed">
+          JAES Solutions empowers IT, media, and telecom firms with scalable
+          infrastructure, cloud solutions, streaming platforms, and
+          communication management systems.
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a
+            href="contact.html"
+            class="cta-btn group inline-flex items-center gap-3.5 px-6 py-3 border border-white rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:bg-white hover:text-black relative overflow-hidden"
+          >
+            Talk to an Expert
+            <span
+              class="arrow-circle bg-white rounded-full p-2 flex items-center justify-center transition-colors group-hover:bg-teal-400"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="arrow-img w-4 h-4 object-contain transition-transform group-hover:translate-x-0.5"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="industry-video relative w-full lg:w-1/2 mt-6 lg:mt-0 rounded-2xl shadow-xl overflow-hidden px-4"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="relative z-0 w-full h-auto rounded-xl"
+        >
+          <source src="assets/98.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-teal-200/30 to-cyan-400/30 mix-blend-overlay pointer-events-none z-10"
+        ></div>
+      </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <div class="background-blobs">
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+    </div>
+  </body>
+</html>

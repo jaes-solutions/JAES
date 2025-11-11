@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact JAES Solutions | Fast IT Support & Expert Services</title>
+    <link rel="icon" href="favicon.ico" />
+    <!-- Standard Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+
+    <!-- Android / Chrome -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/android-chrome-512x512.png"
+    />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Get in touch with JAES Solutions for top-tier IT, app, web development, and hardware services. Fast responses and reliable support guaranteed."
+    />
+    <meta
+      name="keywords"
+      content="Contact JAES Solutions, JAES IT Support, JAES Software Company, IT Services UK, App Development, Web Development, Hardware Support, JAES Contact Info, Tech Company UK, IT Help"
+    />
+    <meta name="author" content="JAES Solutions" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Contact Us | JAES Solutions" />
+    <meta
+      property="og:description"
+      content="Reach out to JAES Solutions for expert IT, app, and hardware services. We respond within an hour to help with your business needs."
+    />
+    <meta
+      property="og:image"
+      content="https://jaessolutions.com/assets/jaes.png"
+    />
+    <meta property="og:url" content="https://jaessolutions.com/contact.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact Us | JAES Solutions" />
+    <meta
+      name="twitter:description"
+      content="Quick and reliable contact with JAES Solutions – your partner in IT, development, and support."
+    />
+    <meta
+      name="twitter:image"
+      content="https://jaessolutions.com/assets/jaes.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LYDJ4DEB0S"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-LYDJ4DEB0S");
+  </script>
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <script>
+      // Load navbar.html into the #navbar-placeholder div
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+
+            // Now safe to access elements from navbar.html
+            document
+              .querySelector(".nav-ser")
+              ?.addEventListener("mouseover", () => {
+                document
+                  .querySelector(".dropdown-menu")
+                  ?.classList.remove("hidden");
+              });
+
+            document
+              .querySelector(".nav-item")
+              ?.addEventListener("mouseleave", () => {
+                document
+                  .querySelector(".dropdown-menu")
+                  ?.classList.add("hidden");
+              });
+
+            const navbar = document.getElementById("navbar");
+            window.addEventListener("scroll", () => {
+              if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+              } else {
+                navbar.classList.remove("scrolled");
+              }
+            });
+          })
+          .catch((error) => {
+            console.error("Error loading navbar:", error);
+          });
+      });
+      //footer
+
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          })
+          .catch((error) => console.error("Footer load error:", error));
+      });
+
+      // Get the navbar element
+      const navbar = document.getElementById("navbar");
+
+      // Listen for the scroll event
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          // Change 50 to the scroll position where you want the color change
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+
+    <!-- Hero Contact Section with Responsive Background -->
+    <section
+      class="relative min-h-screen bg-black flex items-start bg-center bg-no-repeat bg-cover bg-[url('assets/contactback-mobile.png')] sm:bg-[url('assets/contactback.png')]"
+    >
+      <!-- Optional Overlay for readability -->
+      <div class="absolute inset-0 bg-[#42cdf6] bg-opacity-30 -z-10"></div>
+
+      <!-- Content -->
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full flex justify-end">
+        <div class="space-y-6 text-white text-right mt-20">
+          <h1 class="text-4xl md:text-5xl font-bold">Get In Touch</h1>
+          <p class="text-lg leading-relaxed max-w-md">
+            Need help or have a question? We're always happy to hear from you.
+            Reach out to our support team — we’re ready to assist you anytime.
+          </p>
+
+          <a
+            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+            class="inline-flex mt-10 items-center cursor-pointer gap-[10px] px-[18px] py-[10px] border border-white rounded-full text-white bg-transparent font-semibold text-[15px] no-underline transition-all duration-300 ease-in-out hover:bg-[#00bcd4] hover:text-black hover:border-white mx-auto md:mx-0 relative overflow-hidden"
+          >
+            Get Started
+            <span
+              class="bg-white rounded-full p-2 flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-[#b6fffa]"
+            >
+              <img
+                src="assets/arrow.png"
+                alt="Arrow Icon"
+                class="w-4 h-4 object-contain transition-transform duration-300 ease-in-out group-hover:translate-x-[2px]"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-20 bg-black font-poppins">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <!-- Heading -->
+        <h1
+          class="text-5xl md:text-6xl font-extrabold text-center text-white mb-16"
+        >
+          Success starts with you—right here, right now.
+        </h1>
+
+        <!-- Contact Info & Form Grid -->
+        <div class="grid text-left grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16">
+          <!-- Contact Info -->
+          <div
+            class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 shadow-xl rounded-3xl p-6 sm:p-8 md:p-12 transition-transform transform space-y-8 sm:space-y-10"
+          >
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-6 sm:mb-10 text-center md:text-left"
+            >
+              Contact Us
+            </h2>
+            <p
+              class="text-gray-400 mb-8 sm:mb-14 font-medium text-center md:text-left text-sm sm:text-base"
+            >
+              We’ll get back to you within an hour!
+            </p>
+            <div class="space-y-6">
+              <!-- Phone -->
+              <div
+                class="border border-gray-700 rounded-2xl p-5 sm:p-6 bg-gray-900/70 transition duration-200 hover:border-[#42cdf6] hover:bg-gray-800/80 group shadow-sm flex flex-col gap-4 text-center sm:text-left"
+              >
+                <div
+                  class="flex flex-col sm:flex-row items-center sm:justify-between gap-4 sm:gap-6"
+                >
+                  <div class="flex items-center gap-4">
+                    <svg
+                      class="w-6 h-6 text-[#42cdf6] flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      ></path>
+                    </svg>
+                    <div>
+                      <h3
+                        class="text-base sm:text-base font-semibold uppercase tracking-wider mb-1 text-gray-300 group-hover:text-[#42cdf6] transition-colors"
+                      >
+                        Phone
+                      </h3>
+                      <p
+                        class="text-sm sm:text-base text-xl font-bold text-[#42cdf6]"
+                      >
+                        <a href="tel:+44 1279 217307" class="hover:underline"
+                          >+44 1279 217307</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="tel:+44 1279 217307"
+                    class="w-full sm:w-auto mt-3 sm:mt-0 px-5 py-2 rounded-lg border border-[#42cdf6] text-[#42cdf6] font-semibold text-sm text-center transition duration-200 bg-transparent hover:text-[#42cdf6] hover:border-[#42cdf6] focus:outline-none focus:ring-2 focus:ring-[#42cdf6]"
+                  >
+                    Call Now
+                  </a>
+                </div>
+              </div>
+              <!-- Email -->
+              <div
+                class="border border-gray-700 rounded-2xl p-5 sm:p-6 bg-gray-900/70 transition duration-200 hover:border-[#42cdf6] hover:bg-gray-800/80 group shadow-sm flex flex-col gap-4 text-center sm:text-left"
+              >
+                <div
+                  class="flex flex-col sm:flex-row items-center sm:justify-between gap-4 sm:gap-6"
+                >
+                  <div class="flex items-center gap-4">
+                    <svg
+                      class="w-6 h-6 text-[#42cdf6] flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M4 4h16v16H4z" stroke="none"></path>
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <div>
+                      <h3
+                        class="text-base sm:text-base font-semibold uppercase tracking-wider mb-1 text-gray-300 group-hover:text-[#42cdf6] transition-colors"
+                      >
+                        Email
+                      </h3>
+                      <p
+                        class="text-sm sm:text-base text-xl font-bold text-[#42cdf6]"
+                      >
+                        <a
+                          href="mailto:info@jaessolutions.com"
+                          class="hover:underline"
+                          >info@jaessolutions.com</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="mailto:info@jaessolutions.com"
+                    class="w-full sm:w-auto mt-3 sm:mt-0 px-5 py-2 rounded-lg border border-[#42cdf6] text-[#42cdf6] font-semibold text-sm text-center transition duration-200 bg-transparent hover:text-[#42cdf6] hover:border-[#42cdf6] focus:outline-none focus:ring-2 focus:ring-[#42cdf6]"
+                  >
+                    Email Us
+                  </a>
+                </div>
+              </div>
+              <!-- Address -->
+              <div
+                class="border border-gray-700 rounded-2xl p-5 sm:p-6 bg-gray-900/70 transition duration-200 hover:border-[#42cdf6] hover:bg-gray-800/80 group shadow-sm flex flex-col gap-4 text-center sm:text-left"
+              >
+                <div
+                  class="flex flex-col sm:flex-row items-center sm:justify-between gap-4 sm:gap-6"
+                >
+                  <div class="flex items-center gap-4 mx-auto sm:mx-0">
+                    <svg
+                      class="w-6 h-6 text-[#42cdf6] flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 21c-4.418 0-8-5-8-9a8 8 0 1 1 16 0c0 4-3.582 9-8 9z"
+                      ></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <div>
+                      <h3
+                        class="text-base sm:text-base font-semibold uppercase tracking-wider mb-1 text-gray-300 group-hover:text-[#42cdf6] transition-colors"
+                      >
+                        Address
+                      </h3>
+                      <p
+                        class="text-gray-400 leading-relaxed font-medium text-sm sm:text-base"
+                      >
+                        Devonshire House, 582 Honeypot Lane, Stanmore, England,
+                        HA7 1JS, UK
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            id="contact-form"
+            class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 shadow-xl rounded-3xl p-12"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="9fd8a092-0090-4ff5-a466-2f2a706c5b98"
+            />
+            <div class="space-y-10 text-white">
+              <div>
+                <label for="name" class="block text-lg font-semibold mb-3"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                  class="w-full px-6 py-4 border border-gray-700 rounded-2xl bg-black text-white focus:ring-4 focus:ring-[#42cdf6] focus:outline-none transition"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="block text-lg font-semibold mb-3"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                  class="w-full px-6 py-4 border border-gray-700 rounded-2xl bg-black text-white focus:ring-4 focus:ring-[#42cdf6] focus:outline-none transition"
+                />
+              </div>
+
+              <div>
+                <label for="message" class="block text-lg font-semibold mb-3"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="How can we help?"
+                  required
+                  class="w-full px-6 py-4 border border-gray-700 rounded-2xl bg-black text-white focus:ring-4 focus:ring-[#42cdf6] focus:outline-none transition resize-none"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-[#42cdf6] hover:bg-[#42cdf6] text-white font-extrabold py-5 rounded-2xl transition duration-300 shadow-lg"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="mt-24 grid grid-cols-1 md:grid-cols-2 gap-16 text-white">
+          <div
+            class="bg-gradient-to-r from-[#1e8ec2] via-[#229bcf] to-[#42cdf6] p-12 rounded-3xl shadow-2xl hover:shadow-[#42cdf6] transition-shadow duration-300"
+          >
+            <h3 class="text-3xl font-extrabold mb-6">Feedback</h3>
+            <p class="text-gray-300 leading-relaxed font-semibold text-lg">
+              We value your feedback and are dedicated to improving JAES
+              Solutions every day. Your insights play a key role in shaping its
+              future, fostering continuous growth and innovation.
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-[#1e8ec2] via-[#229bcf] to-[#42cdf6] p-12 rounded-3xl shadow-2xl hover:shadow-purple-700 transition-shadow duration-300"
+          >
+            <h3 class="text-3xl font-extrabold mb-6">Customer Support</h3>
+            <p class="text-gray-300 leading-relaxed font-semibold text-lg">
+              Our team is here to assist you. If you need help, feel free to
+              reach out to us. We are committed to providing quick and efficient
+              support for all your inquiries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black text-white py-20 px-6 sm:px-10">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20"
+      >
+        <!-- Map Section -->
+        <div
+          class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-xl hover:scale-[1.02] transition-transform duration-300 ease-in-out md:ml-6 lg:ml-10"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.0856127991287!2d-0.29699699999999996!3d51.603319899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d89bacc664fdc9%3A0x75d563677f09425b!2sJAES%20Solutions%20Ltd.!5e0!3m2!1sen!2sin!4v1762877129411!5m2!1sen!2sin"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full h-64 sm:h-80 md:h-96 rounded-2xl"
+          ></iframe>
+        </div>
+
+        <!-- Text Section -->
+        <div class="w-full md:w-1/2 space-y-4 text-center md:text-left">
+          <h3 class="text-3xl sm:text-4xl font-bold text-[#42cdf6]">
+            Our Location
+          </h3>
+          <p class="text-lg sm:text-xl font-semibold text-gray-100">
+            Headquarters
+          </p>
+          <div
+            class="text-gray-300 text-base sm:text-lg leading-relaxed space-y-1"
+          >
+            <p>Devonshire House</p>
+            <p>582 Honeypot Lane</p>
+            <p>Stanmore, England</p>
+            <p>HA7 1JS, UK</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer-placeholder"></div>
+  </body>
+</html>
